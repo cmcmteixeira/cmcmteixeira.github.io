@@ -19,16 +19,25 @@ html{
     width: 100%;
 }
 
+#about>.content,#contacts>.content{
+    height: 140px;
+    padding-top: calc(50vh - 140px);
+}
+#about>.content h1,#contacts>.content h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
 .section .centered-title{
     text-align: center;
-    height: 70px;
-    padding-top: calc( 50vh - 25px );
+
     color: whitesmoke;
     font-size: medium;
 
 }
 .section .centered-title h3{
-    margin-top: 20px;
     font-size: larger;
 }
 
