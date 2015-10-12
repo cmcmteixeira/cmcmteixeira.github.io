@@ -54,3 +54,7 @@ html{
 .section:nth-child(3){
     background-color: #546E73;
 }
+
+.entry .centered-title{
+    padding-top: 0;
+}
