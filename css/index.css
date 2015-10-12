@@ -24,9 +24,11 @@ html{
     height: 70px;
     padding-top: calc( 50vh - 25px );
     color: whitesmoke;
+    font-size: medium;
 }
 .section .centered-title h3{
     margin-top: 20px;
+    font-size: larger;
 }
 
 .section:nth-child(1){
@@ -41,6 +43,7 @@ html{
     padding-right: 10px;
     max-width: 700px;
     color:white;
+    font-size: medium;
 }
 .section:nth-child(2){
     background-color: #23363A;
