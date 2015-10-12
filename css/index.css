@@ -25,6 +25,7 @@ html{
     padding-top: calc( 50vh - 25px );
     color: whitesmoke;
     font-size: medium;
+
 }
 .section .centered-title h3{
     margin-top: 20px;
@@ -33,6 +34,7 @@ html{
 
 .section:nth-child(1){
     background: url('../img/background.jpg');
+    background-size: cover;
 
 }
 .section .content{
