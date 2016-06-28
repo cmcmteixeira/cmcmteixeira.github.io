@@ -11,10 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <style>
         body{
-            background-color: whitesmoke;
+            background-image: url("images/barkground.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #212121;
+            background-position-y: 60px;
         }
-        .main{
-        }
+
+
         hr{
             max-width: 500px;
         }
@@ -25,19 +30,20 @@
             text-align: center;
         }
         .main{
-            margin: auto;
+            margin-left: calc(50vw - 250px);
+            margin-top: 260px;
             font-weight: 600;
             overflow: hidden;
             animation-duration: 3s;
             animation-name: appear;
-            position: static;
             max-width: 500px;
-
         }
 
         *{
             font-family: 'Bungee Hairline', cursive;
             text-align: center;
+            z-index: 0;
+            color: white;
         }
         @keyframes appear {
             0% {
@@ -53,11 +59,18 @@
             }
         }
 
+        @media (max-width: 500px ){
+            .main {
+                margin-left: 0;
+            }
+        }
+
 
 
     </style>
 </head>
 <body>
+<span class="overlay"></span>
 <div class="header">
     <h1>Carlos Teixeira</h1>
     <h4>Self-proclaimed "World's Best software engineer" ;)</h4>
