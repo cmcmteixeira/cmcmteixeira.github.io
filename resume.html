@@ -62,7 +62,8 @@
                 Currently at ITV , I'm working on maintaining and extending several internal Scala applications which
                 interface with internal ITV systems and third parties apps.
                 <br>
-                Most of the service I maintain are build using http4s, bucky (rabbitMQ),cats and doobie but some older services
+                Most of the service I maintain are build using http4s, bucky (rabbitMQ),cats and doobie but some older
+                services
                 are still written in Scalatra.
                 <br>
                 Recently I've also been leading the effort of adding Kamon to our
@@ -143,7 +144,7 @@
             </div>
         </div>
     </div>
-    <div class="open-source">
+    <div class="open-source" style="page-break-before: always;">
         <div><h5><i class="material-icons">people</i>Community</h5></div>
         <div class="contribution">
             <div class="from-to">
@@ -276,14 +277,16 @@
 </body>
 <style>
     .container {
+        position: relative;
         width: 1050px;
         box-shadow: grey 7px 10px 28px -1px;
         margin-top: 10px;
-
+        left: -100px;
+        /*padding-left: 41px;*/
     }
 
     .header, .name-title {
-        height: 130px;
+        margin-bottom: 20px;
     }
 
     .name-title {
@@ -367,7 +370,7 @@
 
     .description {
         margin-left: 295px;
-        width: 520px;
+        width: 515px;
     }
 
     .contribution {
@@ -378,6 +381,7 @@
         margin-right: 4px;
         top: 5px;
         position: relative;
+        /*margin-left: 80px;*/
     }
 
     .work-experience .work-title {
@@ -397,6 +401,7 @@
 
     .open-source {
         margin-left: 80px;
+        /*        margin-top: 50px;*/
     }
 
     .open-source .from-to {
@@ -565,6 +570,15 @@
 
         * {
             -webkit-print-color-adjust: exact;
+        }
+
+        .open-source {
+            margin-top: 50px;
+        }
+
+        .container {
+            box-shadow: none;
+            padding-left: 41px;
         }
     }
 </style>
