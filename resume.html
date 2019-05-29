@@ -44,10 +44,10 @@
             I'm continuously working on learning and developing my skills and I often
             feed that knowledge back to those I work with.
             <br>
-            I've got a special interest for all things DevOps and I'm a big believer
+            I've got a special interest for DevOps and I'm a big believer
             in its potential.
             <br>
-            Oh, and I'm also very approachable and humorous :)
+            Oh... and I always enjoy a touch of humor :)
         </div>
     </div>
     <div class="work-experience">
@@ -62,7 +62,7 @@
                 Currently at ITV , I'm working on maintaining and extending several internal Scala applications which
                 interface with internal ITV systems and third parties apps.
                 <br>
-                Most of the service I maintain are build using http4s, bucky (rabbitMQ),cats and doobie but some older
+                Most of the service I maintain are build using http4s, bucky (rabbitMQ), cats and doobie but some older
                 services
                 are still written in Scalatra.
                 <br>
@@ -152,7 +152,7 @@
             </div>
             <div class="work-title">Bug fix</div>
             <div class="project"><a target="_blank"
-                                    href="https://github.com/ITV/scala-pact/commit/54eaced06e4b2ff5ee76bbf9e8b27162e922967b">scala-pact</a>
+                                    href="https://github.com/ITV/scala-pact/commit/54eaced06e4b2ff5ee76bbf9e8b27162e922967b">Link: scala-pact</a>
             </div>
             <div class="description">
                 Fix bug that would ignore query parameter values if the same key was specified more than once.
@@ -164,10 +164,10 @@
             </div>
             <div class="work-title">Bug fix</div>
             <div class="project"><a target="_blank"
-                                    href="https://github.com/kamon-io/kamon-http4s/commit/d20ebeade9ae230009ba88cd4f7e4f17e9740034">kamon-http4s</a>
+                                    href="https://github.com/kamon-io/kamon-http4s/commit/d20ebeade9ae230009ba88cd4f7e4f17e9740034">Link: kamon-http4s</a>
             </div>
             <div class="description">
-                Upgraded to the latest htt4s version and cleaned some test code.
+                Upgraded to the latest http4s version and cleaned some test code.
             </div>
         </div>
         <div class="contribution">
@@ -175,7 +175,7 @@
                 <span>March 2019</span>
             </div>
             <div class="work-title">Bug fix</div>
-            <div class="project"><a target="_blank" href="https://github.com/http4s/http4s/issues/2340">http4s</a></div>
+            <div class="project"><a target="_blank" href="https://github.com/http4s/http4s/issues/2340">Link: http4s</a></div>
             <div class="description">
                 Fixed bug where the blaze client connection pool would always close the
                 connection after a response was read stopping it from being used again.
@@ -186,7 +186,7 @@
                 <span>February 2019</span>
             </div>
             <div class="work-title">Project rewrite</div>
-            <div class="project"><a target="_blank" href="https://github.com/ITV/bucky">bucky</a></div>
+            <div class="project"><a target="_blank" href="https://github.com/ITV/bucky">Link: bucky</a></div>
             <div class="description">
                 Rewrote the bucky library using cats and cats-effects. <br>
                 Maintainability and usability were improved,
@@ -199,7 +199,7 @@
             </div>
             <div class="work-title">Bug fix</div>
             <div class="project"><a target="_blank"
-                                    href="https://github.com/kamon-io/kamon-http4s/commit/62adbd35a1278a380ad9cbf9c8533f6cdb56a605">kamon-http4s</a>
+                                    href="https://github.com/kamon-io/kamon-http4s/commit/62adbd35a1278a380ad9cbf9c8533f6cdb56a605">Link: kamon-http4s</a>
             </div>
             <div class="description">
                 Fixed issue where, when a response could not be obtained (e.g. a connection timed out), the context
@@ -213,7 +213,7 @@
                 <span>December 2018</span>
             </div>
             <div class="work-title">Talk</div>
-            <div class="project"><a target="_blank" href="https://youtu.be/KVLYb9uqzwA">Scala Central</a></div>
+            <div class="project"><a target="_blank" href="https://youtu.be/KVLYb9uqzwA">Link: Scala Central</a></div>
             <div class="description">
                 "Distributed tracing & metrics collections 4 scala" was a talk I gave at Scala Central which
                 showed some of the potential of Kamon.
@@ -226,7 +226,7 @@
                 <span>January 2019 - Now</span>
             </div>
             <div class="work-title">Personal project</div>
-            <div class="project"><a target="_blank" href="https://github.com/Porchgeese">Porch Geese</a></div>
+            <div class="project"><a target="_blank" href="https://github.com/Porchgeese">Link: Porch Geese</a></div>
             <div class="description">
                 A set of personal projects meant to explore some technologies I'm interested in.
             </div>
@@ -276,6 +276,9 @@
 </div>
 </body>
 <style>
+    .name-title h5 {
+        font-size: 1.64rem;
+    }
     .container {
         position: relative;
         width: 1050px;
@@ -298,9 +301,6 @@
         top: 25px;
     }
 
-    .name-title h5 {
-        font-weight: lighter;
-    }
 
     .links-references {
         font-style: italic;
@@ -333,11 +333,12 @@
     }
 
     .professional-statement .statement {
-        text-align: justify;
         width: 515px;
         margin-left: 135px;
         text-align: justify;
         display: inline-block;
+        position: relative;
+        top: -23px;
 
 
     }
@@ -516,6 +517,7 @@
 
     h5 {
         color: #676767;
+        font-size: 1.1rem;
     }
 
     h4 {
