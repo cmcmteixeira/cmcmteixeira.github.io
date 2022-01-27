@@ -24,8 +24,8 @@
             <div class="link-reference"><i class="material-icons">email</i><a target="_blank"
                                                                               href="mailto:cmcmteixeira@gmail.com">cmcmteixeira@gmail.com</a>
             </div>
-            <div class="link-reference"><i class="material-icons">local_phone</i><a target="_blank" href="#">(+44)
-                07716617737</a></div>
+            <div class="link-reference"><i class="material-icons">local_phone</i><a target="_blank" href="#">(+351)
+                937316333</a></div>
             <div class="link-reference"><i class="material-icons">web</i><a target="_blank"
                                                                             href="http://cmcmteixeira.github.io">cmcmteixeira.github.io</a>
             </div>
@@ -54,20 +54,35 @@
         <div><h5><i class="material-icons">laptop</i>Work Experience</h5></div>
         <div class="experience">
             <div class="from-to">
-                <span>June 2018 - Currently</span>
+                <span>September 2019 - Currently</span>
+            </div>
+            <div class="work-title">Senior Software Engineer</div>
+            <div class="company"><a target="_blank" href="http://www.lenses.io">Lenses.io</a></div>
+            <div class="description">
+                Currently at Lenses.io, I'm working on the parsing and compilation of LSQL, a SQL like language that
+                allows users to define streaming applications.
+                <br>
+                Most of the code that I write uses functional concepts like recursion schemes,
+                free monads and type classes.
+                <br>
+                Technology wise, I use libraries like akka-streams, kafka-streams
+                and typelevel projects like cats, cats-effect, etc.
+            </div>
+        </div>
+        <div class="experience">
+            <div class="from-to">
+                <span>June 2018 - September 2019</span>
             </div>
             <div class="work-title">Core Software Engineer</div>
             <div class="company"><a target="_blank" href="http://www.itv.com">ITV</a></div>
             <div class="description">
-                Currently at ITV , I'm working on maintaining and extending several internal Scala applications which
-                interface with internal ITV systems and third parties apps.
+                At ITV , I worked in CDT (content delivery technology) building an automatic microservice platform that
+                allowed content to be routed from/to external media asset providers.
                 <br>
-                Most of the service I maintain are build using http4s, bucky (rabbitMQ), cats and doobie but some older
-                services
-                are still written in Scalatra.
+                Most of the service were build using http4s, bucky (rabbitMQ), cats and doobie.
                 <br>
-                Recently I've also been leading the effort of adding Kamon to our
-                stack in order to facilitate tracing & metric collection across multiple services.
+                I've also lead the effort for adding Kamon to the ITV
+                stack in order to facilitate distributed tracing & metric collection across multiple services.
             </div>
         </div>
 
@@ -78,12 +93,15 @@
             <div class="work-title">Scala Developer</div>
             <div class="company"><a target="_blank" href="http://www.moneyfarm.com">Moneyfarm</a></div>
             <div class="description">
-                At Moneyfarm I maintained and improved existing Scala applications using Akka-Http and was also tasked
+                At Moneyfarm I developed and maintained several facets of the platform that managed client asset portfolios.
+                <br>
+                These included things like portfolio management, invoicing, reconciliation, risk management, ...
+                <br>
+                I maintained and improved existing Scala applications using Akka-Http and was also tasked
                 with migrating some legacy systems written in Groovy into Scala.
                 <br>
                 During the time I was at Moneyfarm, I also proposed and implemented the distributed metrics
-                collection & tracing
-                solutions currently in use.
+                collection & tracing solutions currently in use.
             </div>
         </div>
 
@@ -95,7 +113,7 @@
             <div class="company"><a target="_blank" href="http://www.ventureoak.com">Ventureoak</a></div>
             <div class="description">
                 At Ventureoak I built and maintained several web related projects(frontend and backend) mostly using
-                Symphony and Javascript.
+                PHP and Javascript.
                 <br>
                 Most projects were small in size/scale which allowed me to experiment with different tools and
                 techniques.
@@ -160,25 +178,13 @@
         </div>
         <div class="contribution">
             <div class="from-to">
-                <span>April 2019</span>
-            </div>
-            <div class="work-title">Bug fix</div>
-            <div class="project"><a target="_blank"
-                                    href="https://github.com/kamon-io/kamon-http4s/commit/d20ebeade9ae230009ba88cd4f7e4f17e9740034">Link: kamon-http4s</a>
-            </div>
-            <div class="description">
-                Upgraded to the latest http4s version and cleaned some test code.
-            </div>
-        </div>
-        <div class="contribution">
-            <div class="from-to">
                 <span>March 2019</span>
             </div>
             <div class="work-title">Bug fix</div>
             <div class="project"><a target="_blank" href="https://github.com/http4s/http4s/issues/2340">Link: http4s</a></div>
             <div class="description">
-                Fixed bug where the blaze client connection pool would always close the
-                connection after a response was read stopping it from being used again.
+                Found and fixed a bug regarding the lifecycle management of the http client connection pool that
+                caused significant performance problems by not allowing connections to be reused.
             </div>
         </div>
         <div class="contribution">
@@ -188,9 +194,10 @@
             <div class="work-title">Project rewrite</div>
             <div class="project"><a target="_blank" href="https://github.com/ITV/bucky">Link: bucky</a></div>
             <div class="description">
-                Rewrote the bucky library using cats and cats-effects. <br>
+                Rewrote the bucky rabbitMQ library using tagless final.
+                <br>
                 Maintainability and usability were improved,
-                Kamon support was added and it now includes test helpers to make testing easier.
+                Kamon support was added and test helpers were added.
             </div>
         </div>
         <div class="contribution">
@@ -202,9 +209,8 @@
                                     href="https://github.com/kamon-io/kamon-http4s/commit/62adbd35a1278a380ad9cbf9c8533f6cdb56a605">Link: kamon-http4s</a>
             </div>
             <div class="description">
-                Fixed issue where, when a response could not be obtained (e.g. a connection timed out), the context
-                propagation would be lost due to an unhandled
-                error.
+                Found and fixed a bug that caused the context propagation mechanism to fail when no responses
+                could be obtained from an http server.
             </div>
         </div>
 
@@ -217,8 +223,8 @@
             <div class="description">
                 "Distributed tracing & metrics collections 4 scala" was a talk I gave at Scala Central which
                 showed some of the potential of Kamon.
-                The project in which the talk is based can be found <a
-                    href="https://github.com/cmcmteixeira/foobar-tracing-demo">here</a>.
+                The project in which the talk is based can be found at <a
+                    href="https://github.com/cmcmteixeira/foobar-tracing-demo">github.com/cmcmteixeira/foobar-tracing-demo</a>.
             </div>
         </div>
         <div class="contribution">
